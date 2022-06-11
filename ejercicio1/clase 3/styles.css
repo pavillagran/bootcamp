@@ -1,0 +1,30 @@
+.parent {    /* es toda la pantalla, y  este manda el comportamiento de las cajas pequenias (hijos), siempre que se trabaja con flex debe definire el parent como padre*/
+    display:flex;  /* debe estar en modo flex, para que los hijos funcionen con flex. Es importante ya que los hijos heredan las propiedades (ejemplo color, no asi con alto y ancho,  de los padres. */
+    flex-wrap: wrap; /* no-wrap: no respeta , wrap-reverse invierte los componentes */
+    flex-direction: row; /* row, row-reverse, colum */
+    
+
+    /* ALINEAR LAS CAJAS, SI PARTEN EN LA IZQ. SI QUEDA ENTRE ELLAS UN ESPACIO, SI SE JUSTIFICAN A LA DERECHA O FINAL, SI CENTRADO PERO DEJA ESPACIO ENTRE ELLAS, AL MEDIO */
+    justify-content:space-around;
+
+    /* el componente con flex, es responsivo pero al achicarse debe señalarse los tamaños para que el contenido de cada componente no se pixelize. */
+    /* define el comportamiento de acuerdo*/
+    align-items:  flex-start ; /* borde superior alineado?*/
+
+
+/* gap */ 
+    column-gap: 10px  ;
+    gap: 10 px (¿/* primer valor es fila, segundo columna */  ; 
+
+}
+
+
+.color-row {
+    border: 1 px
+}
+
+.color-col {
+    
+}
+
+

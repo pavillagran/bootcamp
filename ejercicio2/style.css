@@ -1,7 +1,165 @@
 a { 
-    color:brown
+    color:rgb(42, 165, 63);
+       
 }
 
 p {
-    color:blue
+    color:rgb(255, 102, 0)
 }
+
+#button-middle{
+color: yellow;
+border-radius: 100%;
+}
+
+.button {
+    font: arial;
+    color: aqua;
+}
+
+li {
+    color:rgb(42, 165, 63)
+}
+
+.example-properties{
+    border: 1px solid aquamarine;
+    width: 50%;
+}
+
+.main-component{
+    border: 1px solid rgb(127, 157, 255);
+    width: 80%;
+}
+#px-component {
+    border: 2 px solid #806c6c;
+}
+
+#vh-vw-component {
+    border: 2 px solid #806c6c;
+    width: 90vw;
+    height: 90vh;
+/* no se recomienda mucho, es preferible usar porcentajes y no vh y vw, pues abarca la pantalla completa */
+}
+
+#max-min-componenct {
+    max-width: 300px;
+    min-width: 100px;
+    border: 2 px solid #806c6c;
+
+}
+
+#overflowscroll-component {
+    max-width: 500px;
+    min-width: 50px;
+    border: 2 px solid #806c6c;
+    overflow: scroll;
+
+}
+
+#display {
+    display: none;
+    /* probar display none, se usa en condiciones para que aparezcan componentes;block (usa todo el bloque aunque no haya texto respetando el padre; inline,  no respeta el widht y el hight del padre*/
+}
+
+
+#fixed { 
+position: fixed;    
+/* fixed, el link siempre se ve aunque suba y baje con scroll */
+}
+
+#sticked { 
+    position: fixed;    
+    /* fixed, el link siempre se ve aunque suba y baje con scroll */
+    }
+
+#relative { 
+        position: relative;    
+        /*  no sale de los rangos definidos del padre*/
+        }    
+
+#absolute { 
+            position: absolute;    
+            /* ignora y se usa lo que sea fijado */
+            }    
+
+
+
+
+            /* tdo en html va en 3: contenido, borde y margen.
+            el contenido se ve alterado por el margen. */
+
+.boxmodel {
+width: 50%;
+height: 50%;
+padding: 200px;   /* comprime el contenido (texto por ejemplo), hacia adentro de la caja */
+border: 2px red;   /* la frontera*/
+margin: 40px;  /*(lo exterior de la caja, lo que se desplaza hacia afuera) */
+}
+
+#background {
+    background-color: aqua;
+color: blueviolet !important; 
+}
+
+#background-img {
+   
+color: blueviolet !important;
+background-image: url("https://t4.ftcdn.net/jpg/02/71/12/01/240_F_271120192_ZDT2FCxH94akiIsOHwVULWnbNzi8Oagn.jpg");
+height: 70%;
+width: 70%;
+background-position: center;
+background-repeat: no-repeat;  /* no repite si falta fondo para alcanzar la pantalla */  
+word-spacing: 30px;  /* separacion entre cada palabra de 30px */
+text-decoration: underline;
+font-family: monospace;
+font-weight: 100;
+
+}
+
+.z-index {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    background-image: url("https://t4.ftcdn.net/jpg/02/71/12/01/240_F_271120192_ZDT2FCxH94akiIsOHwVULWnbNzi8Oagn.jpg");
+height: 70%;
+width: 70%;
+background-position: center;
+background-repeat: no-repeat;  /* no repite si falta fondo para alcanzar la pantalla */  
+    }
+
+.h1 {
+    /*position: absolute;*/
+    left: 0;
+    top: 0;
+    z-index: 3;
+    font-family: monospace;
+    font-weight: 200;
+      }
+
+
+.parrafo-media-query {
+    font-size: 40;
+    font-family: arial;
+
+}
+
+@media (min-width: 768px and max-width: 962px){ 
+    font-size: 50px;
+}
+
+@media (min-width: 768px and max-width: 962px){ 
+    font-size: 50px;
+
+}
+
+/* REGLA 80% 20%, EL PRIMER GRUPO debe poder ver en sus dispositivos bien el proyecto */
+/* media query separados, css para mobiles, otra para pc. https://www.adictosaltrabajo.com/2012/10/11/css3-media-queries/  */ 
+
+
+div > a {
+    color ;
+
+}
+
+:focus
