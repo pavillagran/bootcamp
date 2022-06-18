@@ -1,0 +1,251 @@
+header {
+    background-color: white;
+     padding-left: 4rem;
+     padding-top: 2rem;
+     color: black;
+     
+}
+
+
+header nav {
+    display:none
+
+}
+
+
+
+html {
+    background-color: white;
+    font-family: 'Prompt', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+body {
+    margin:0;
+    padding:0;
+}
+main {
+  
+  background-color: rgb(223, 223, 223);
+  text-align: center;
+  display:block;
+ 
+ 
+}
+
+
+
+.btn {
+    border-radius: 500px;
+    padding: 10px 24px;
+    color: rgb(25, 59, 212) !important;
+    font-size: 12px;
+    font-weight: bold;
+    opacity: 0.6;
+    transition: 0.3s;
+    border: 1px;
+}
+
+body links {
+    text-align:center;
+    display:block;
+}
+
+body a {
+    color: #b3bbb6;
+}
+
+footer {
+    color: black;
+    background-color: white;
+    list-style:none;
+}
+
+
+
+header a {
+    color: rgb(0, 0, 0) ;
+    text-decoration: none;
+}
+
+header a:hover  {
+    color: #7f7ed6 !important;
+    text-decoration: none;
+}
+
+footer a {
+    color: rgb(7, 7, 7) ;
+    text-decoration: none;
+}
+
+footer a:hover  {
+    color: #7f7ed6 !important ;
+    text-decoration: none;
+}
+
+
+header span {
+    text-align: right;
+    float: right;
+    word-spacing: 2rem;
+    font-size: 16px;
+    padding-right: 2rem ;
+}
+
+.flex-container {
+    /*margin: 50px ; */
+    width: 450px;
+    display: flex;
+    flex-direction: row;
+    padding-left: 250px;
+    letter-spacing: .08em;
+    line-height: 30px;
+    text-decoration: none;
+    
+    
+  }
+
+
+  
+  /* RESPONSIVO */
+  @media (max-width: 800px) {
+    .flex-container {
+      flex-direction: column;
+
+    }
+    header span {
+        font-size: 0;
+    }
+    body {
+        background-size: auto;
+        background-repeat: no-repeat;
+        height: 100vh;
+    }
+   header nav {
+        display: flex;
+        align-items: left;
+        border:0px;
+        border-radius: 0px;
+        justify-content: right;
+        padding-right: 0;
+
+
+    }
+
+  }    
+      
+  
+  .flex-container img {
+    display: block;
+    width: 24px;
+    height: 24px;
+    color: white;
+    border-radius: 50%;
+    /* background-color: #222326;  */
+    padding: 10px;
+    align-items: center;
+    text-decoration: none;
+  }
+
+  .flex-container flex-item-left {
+    padding-left:10px ;
+    text-decoration: none;
+  }
+
+
+  .container1 {
+    display: grid;
+    grid-auto-columns: minmax(15rem, auto);
+    grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+    grid-gap: 1rem;
+    color:black;
+    background-color: white;
+    text-align: center;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    padding-bottom: 2rem;
+
+    
+  }
+
+  .container1 img {
+    width: 200px;
+    height: 220px;
+  }
+.item1 {
+    background-color: white;
+    color: #000000;
+    padding: 2rem;
+    font-size: 12px;
+    
+  
+  }
+  
+  .container {
+    display: grid;
+    grid-auto-columns: minmax(15rem, auto);
+    grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+    grid-gap: 2rem;
+
+    margin-left: 2rem;
+    margin-right: 2rem;
+ 
+   
+   
+  }
+.item {
+    background: #fff;
+    border: 0px solid #3b3b3b;
+    color: #000000;
+    width: 250px;
+    height: 400px;
+    font-size: 12px;
+    text-align: center;
+    border-radius: 1rem;
+    box-shadow: rgb(0 0 0 / 30%) 0px 0px 8px;
+    margin: 0rem;
+    
+  }
+
+
+
+  .linea {
+    border-top: 1px solid rgb(204, 204, 204);
+    height: 2px;
+    max-width: 50%;
+    padding: 2px;
+      margin: 50px auto 0 auto;
+  }
+  
+  .centrado{
+    text-align: center;
+  }
+
+  #jumbo {
+
+    background-image: url(assets/images/back.jpeg);
+    display: block;
+    margin-top: 30px;
+    padding: 30px;
+    width: 100%px;
+    height: 350px;
+    max-width: 100%;
+    max-height: 1024px;
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-position: center ;
+    border: 0px solid #3b3b3b;
+    box-shadow: rgb(0 0 0 / 30%) 0px 0px 8px;
+    text-align: right;
+    color: rgb(58, 58, 58);
+
+}
+
+#jumbo h2 {
+  font-size: 4rem;
+color: rgb(21, 10, 59);
+}
+#jumbo p {
+  font-size: 2rem;
+  color: rgb(21, 10, 59);
+}
